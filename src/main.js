@@ -2,7 +2,7 @@
 const a = 3;
 const b = 2;
 
-function sum(){
+function sum() {
   return a + b;
 }
 
