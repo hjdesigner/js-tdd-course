@@ -4,21 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>03 - Const</title>
+  <title>04 temporal dead zone</title>
 </head>
 <body>
   
   <script>
-    const secretNumber = 28;
-    const will = {
-      name: 'Willian',
-      age: 53
-    }
-    console.log(will);
+    // não pega o valor quando a variavel é declarada antes
+    console.log(cat);
 
-    will.age = 26;
+    let cat = 'meow';
 
-    console.log(will);console.log(will);
   </script>
 </body>
 </html>
