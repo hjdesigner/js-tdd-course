@@ -1,35 +1,35 @@
 {
   "name": "js-tdd-course",
   "version": "1.0.0",
-  "description": "Nossa biblioteca do curso de JS com TDD na prática.",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint src/*.js",
-    "prepush": "npm run lint",
+    "build": "./node_modules/.bin/webpack --colors --progress",
+    "watch": "npm run build -- --watch",
+    "server": "./node_modules/.bin/webpack-dev-server --inline --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hjdesigner/js-tdd-course.git"
   },
-  "keywords": [
-    "js",
-    "tdd",
-    "library"
-  ],
+  "keywords": [],
   "author": "Henrique Melanda <hjdesigner23@gmail.com> (http://www.henriquemelanda.com.br/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hjdesigner/js-tdd-course/issues"
   },
   "homepage": "https://github.com/hjdesigner/js-tdd-course#readme",
-  "dependencies": {
-    "gitignore": "^0.6.0"
-  },
   "devDependencies": {
-    "eslint": "^4.14.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "husky": "^0.14.3"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack-dev-server": "^2.10.0"
   }
 }
