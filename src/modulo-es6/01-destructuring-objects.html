@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>01 - Destructurin Objects</title>
+</head>
+<body>
+  
+  <script>
+    var data = {
+      name: 'Henrique',
+      surname: 'Melanda',
+      age: 27,
+      blog: 'http://www.henriquemelanda.com.br',
+      social: {
+        twitter: '@coisadedev',
+        facebook: '/henriquefront'
+      }
+    };
+
+    const { name, surname } = data;
+    const { facebook, twitter } = data.social;
+
+    console.log(name, surname);
+    console.log(facebook, twitter);
+
+    const { facebook: fb } = data.social;
+
+    console.log(`http://www.facebook.com.br${fb}`);
+
+    const { city = 'Dublin' } = data;
+
+    console.log(city);
+  </script>
+</body>
+</html>

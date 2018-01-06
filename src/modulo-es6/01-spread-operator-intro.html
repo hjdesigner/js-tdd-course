@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>01 - spread Operator Intro</title>
+</head>
+<body>
+  
+<script>
+  let front = ['react', 'vue', 'angular'];
+  let back = ['python', 'ruby', 'nodejs'];
+
+  console.log([...'will']);
+  console.log(...front);
+
+  //let fullStack = front.concat(back);
+  //console.log(fullStack);
+
+  let fullStack = [...front, 'RxJS', ...back];
+  console.log(fullStack);
+
+  
+</script>
+</body>
+</html>
