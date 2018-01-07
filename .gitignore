@@ -20,3 +20,4 @@ coverage
 /ignore/
 /src/vendor/bower_components/
 /bower_components
+/coverage/
