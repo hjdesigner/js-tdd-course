@@ -12,6 +12,8 @@ bin
 .sass-cache
 node_modules
 npm-debug.log
+.nyc_output
+coverage
 
 # Ignorar todos os diretorios e arquivos em um diretorio. ignore/*
 /nbproject/
